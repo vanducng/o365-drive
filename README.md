@@ -19,7 +19,7 @@ oracle_db_user = "__oracle_db_user__"
 oracle_db_pass = "__oracle_db_pass__"
 oracle_db_dns = "__oracle_db_dns__"
 
-if __name__="__main__":
+if __name__=="__main__":
     df = None
     query = "SELECT * FROM AP_BI.T_CRM_TLS_CALL_LIST_PROD"
     with cx_Oracle.connect(oracle_db_user,oracle_db_pass,oracle_db_dns) as con:
